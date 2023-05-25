@@ -42,9 +42,10 @@ my_data_rows = my_cur.fetchall()
 
 # User addas a row
 fruit_to_add = streamlit.text_input('What fruit would you like to add?','')
-# streamlit.write('The user entered ', fruit_to_add)
+streamlit.write('The user entered ', fruit_to_add)
 
-# my_data_rows.append(fruit_to_add)
+fruit_to_add = (fruit_to_add,)
+my_data_rows.append(fruit_to_add)
 
 streamlit.text(type(my_data_rows))
 streamlit.text(fruit_to_add)
