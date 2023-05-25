@@ -42,7 +42,7 @@ streamlit.dataframe(fruityvice_normalized) # creates a dataframe of the normaliz
 # streamlit.text("Hello from Snowflake:")
 # streamlit.text(my_data_row)
 
-Quesry some data
+# Quesry some data
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
 my_cur.execute("select * from fruit_load_list")
