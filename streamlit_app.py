@@ -46,7 +46,7 @@ my_data_rows = my_cur.fetchall()
 
 # my_data_rows.append(fruit_to_add)
 
-streamlit.text(type(my_data_rows)
+streamlit.text(type(my_data_rows))
 
 streamlit.header("The fruit load list contains:")
 streamlit.dataframe(my_data_rows)
