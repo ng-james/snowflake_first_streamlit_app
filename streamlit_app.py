@@ -47,10 +47,6 @@ streamlit.write('The user entered ', fruit_to_add)
 fruit_to_add = (fruit_to_add,)
 my_data_rows.append(fruit_to_add)
 
-streamlit.text(type(my_data_rows))
-streamlit.text(fruit_to_add)
-streamlit.text(type(my_data_rows[0]))
-
 streamlit.header("The fruit load list contains:")
 streamlit.dataframe(my_data_rows)
 
